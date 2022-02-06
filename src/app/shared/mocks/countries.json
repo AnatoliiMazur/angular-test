@@ -1,0 +1,38 @@
+[
+  {
+    "country": "Ukraine",
+    "address": "Oleksandra Archipenka street, 5, Kyiv, 04210",
+    "phones": [
+      "123456789",
+      "987654321"
+    ],
+    "mails": [
+      "demolink-123@mail.com",
+      "demolink-456@mail.com"
+    ]
+  },
+  {
+    "country": "Poland",
+    "address": "plac Zamkowy 4, 00-277 Warszawa, Польша",
+    "phones": [
+      "123456789",
+      "987654321",
+      "123456789"
+    ],
+    "mails": [
+      "demolink-123@mail.com"
+    ]
+  },
+  {
+    "country": "USA",
+    "address": "plac Zamkowy 4, 00-277 Warszawa, Польша",
+    "phones": [
+      "123456789",
+      "987654321"
+    ],
+    "mails": [
+      "demolink-123@mail.com",
+      "demolink-456@mail.com"
+    ]
+  }
+]

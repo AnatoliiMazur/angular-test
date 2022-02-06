@@ -1,0 +1,31 @@
+@import "../../../assets/styles/variables";
+
+.address {
+  margin-top: 30px;
+}
+
+.address-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px;
+}
+
+.address-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.address-card {
+  border: 1px solid $primary;
+  background-color: $primary-light;
+  border-radius: 5px;
+  padding: 50px 30px;
+
+  > * + * {
+    margin-top: 10px;
+  }
+}

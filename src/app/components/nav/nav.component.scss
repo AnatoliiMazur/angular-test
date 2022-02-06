@@ -1,0 +1,26 @@
+@import "../../../assets/styles/variables";
+
+.nav {
+  display: flex;
+}
+
+.nav-item {
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.nav-link {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.nav-link-active {
+  color: $primary;
+}

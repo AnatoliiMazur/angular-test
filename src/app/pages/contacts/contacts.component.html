@@ -1,0 +1,33 @@
+<section class="section">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="address">
+      <div class="address-group">
+        <div class="address-item" *ngFor="let address of addresses">
+          <div class="address-card">
+            <div *ngIf="address.country === 'USA'">This Country is</div>
+            <h3 class="address-card-title">{{ address.country }}</h3>
+            <h5 class="address-card-description">{{ address.address }}</h5>
+            <div class="address-card-phone" *ngFor="let phone of address.phones">
+              <a [href]="'tel:' + phone">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.41564 4.18074L4.8784 1.252C4.5859 0.914505 4.04966 0.916005 3.70991 1.2565L1.62342 3.34674C1.00242 3.96849 0.824675 4.89173 1.18392 5.63198C3.33013 10.0757 6.91393 13.6645 11.3546 15.8169C12.0941 16.1762 13.0166 15.9984 13.6376 15.3767L15.7436 13.2669C16.0848 12.9257 16.0856 12.3864 15.7451 12.0939L12.8051 9.57021C12.4976 9.30621 12.0199 9.34071 11.7116 9.64971L10.6886 10.6742C10.6362 10.7291 10.5673 10.7653 10.4924 10.7772C10.4175 10.7891 10.3407 10.7761 10.2739 10.7402C8.60172 9.77728 7.21463 8.38839 6.2539 6.71497C6.21792 6.64804 6.20489 6.57114 6.21681 6.49609C6.22873 6.42104 6.26495 6.35197 6.3199 6.29948L7.33989 5.27873C7.64889 4.96823 7.68264 4.48824 7.41564 4.17999V4.18074Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                {{ phone }}
+              </a>
+            </div>
+            <div class="address-card-mail" *ngFor="let mail of address.mails">
+              <a [href]="'mailto:' + mail">
+                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 2.5C1 2.10218 1.15804 1.72064 1.43934 1.43934C1.72064 1.15804 2.10218 1 2.5 1H14.5C14.8978 1 15.2794 1.15804 15.5607 1.43934C15.842 1.72064 16 2.10218 16 2.5V11.5C16 11.8978 15.842 12.2794 15.5607 12.5607C15.2794 12.842 14.8978 13 14.5 13H2.5C2.10218 13 1.72064 12.842 1.43934 12.5607C1.15804 12.2794 1 11.8978 1 11.5V2.5Z" stroke="#0B222F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 4L6.62575 8.50075C7.15772 8.92638 7.81871 9.15828 8.5 9.15828C9.18129 9.15828 9.84228 8.92638 10.3742 8.50075L16 4" stroke="#0B222F" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                {{ mail }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

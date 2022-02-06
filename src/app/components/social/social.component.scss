@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables";
+
+.social {
+  display: flex;
+
+  > * + * {
+    margin-left: 15px;
+  }
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  background-color: $primary-light;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+}

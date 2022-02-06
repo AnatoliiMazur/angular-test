@@ -1,0 +1,23 @@
+@import "../../../assets/styles/variables";
+
+.header {
+  padding: 20px 0;
+  background: $primary-light;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+
+  a {
+    color: inherit;
+  }
+}
